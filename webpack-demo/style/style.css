@@ -74,12 +74,21 @@ section input:hover {
 	text-align: center;
 	margin-bottom: 30px;
 }
+.show {
+	position: relative;
+}
 .show p {
+	position: absolute;
+	left: 10px;
 	margin: 10px;
-	text-align: center;
+	text-align: left;
+	margin-top: 0;
+}
+.show h1 {
+	margin: 5px;
 }
 .show button {
-	margin: 20px;
+	margin: 10px;
 }
 nav button {
 	margin-left: 5px;

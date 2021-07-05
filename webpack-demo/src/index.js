@@ -68,7 +68,7 @@ let show = (d) => {
 	btn.addEventListener("click", () => {
 		goTo();
 	});
-	div.append(dayname, daynotes, btn);
+	div.append(btn, dayname, daynotes);
 	sect.append(div);
 };
 let goTo = () => {
