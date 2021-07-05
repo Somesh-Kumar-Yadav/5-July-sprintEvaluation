@@ -17,7 +17,15 @@ nav div {
 	margin-right: 20px;
 }
 nav div:nth-child(1) {
-	margin-right: 200px;
+	position: absolute;
+	top: 10px;
+	font-size: 24px;
+	left: 10px;
+}
+nav div:nth-child(3) {
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 section {
 	height: 100vh;
@@ -33,6 +41,15 @@ section textarea {
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 20px;
+}
+nav select {
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0.2px 0.2px 1px #111111;
+	outline: none;
+
+	transition: 0.2s;
 }
 section input {
 	padding: 4px;
@@ -70,4 +87,18 @@ nav button {
 span {
 	margin: 5px;
 	font-size: 20px;
+}
+section button {
+	padding: 5px;
+	margin-top: -10px;
+	border-radius: 6px;
+	border: 1px solid #111111;
+	transition: 0.3s;
+}
+section button:hover {
+	transform: scale(1.1);
+}
+
+button {
+	cursor: pointer;
 }

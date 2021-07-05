@@ -47,7 +47,7 @@ let navbar = () => {
 						<option>Day-16</option>
 					</optgroup>
 				</select>
-				<button id="go">Go</button>
+				<button id="go">View Notes</button>
 			</div>
 		`;
 };

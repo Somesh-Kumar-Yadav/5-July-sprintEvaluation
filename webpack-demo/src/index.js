@@ -1,14 +1,16 @@
-import axios from "axios";
 import navbar from "../components/navbar.js";
 import section from "../components/section.js";
+
 let nav = document.querySelector("nav");
 let sec = document.querySelector("section");
 let sect = document.querySelector(".show");
+
 let main = () => {
 	nav.innerHTML = navbar();
 	sec.innerHTML = section();
 };
 main();
+
 let obj = {};
 let obj_2 = {};
 let t = document.getElementById("tit_le");
@@ -51,7 +53,7 @@ let show = (d) => {
 	sect.innerHTML = null;
 	let div = document.createElement("div");
 	let dayname = document.createElement("h1");
-	if (obj_2[d] == undefined) {
+	if (obj_2[d] == undefined || obj_2[d].length == 0) {
 		obj_2[d] = "No title";
 	}
 	dayname.innerHTML = `${d} <br/><span>${obj_2[d]}</span>`;
